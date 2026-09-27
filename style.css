@@ -1,0 +1,102 @@
+body {
+  background-color: #0b0e14;
+  color: #3fb950;
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 0;
+}
+
+h1 {
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  color: #8b949e;
+}
+
+#file-container {
+  margin-bottom: 20px;
+}
+
+.screen-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.screen-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.screen-title {
+  font-size: 11px;
+  color: #8b949e;
+  margin-bottom: 5px;
+}
+
+/* Sol Canvas (320x288 px) */
+#canvas-screen {
+  width: 320px;
+  height: 288px;
+  background-color: #000;
+  border: 2px solid #30363d;
+  border-radius: 4px;
+  image-rendering: pixelated;
+}
+
+/* Sağ ASCII Ekran (320x288 px - Tam Sığdırılmış) */
+#ascii-screen {
+  width: 320px;
+  height: 288px;
+  background-color: #000;
+  border: 2px solid #30363d;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+  /* 160x144 Karakter Matrisi Ayarları */
+  font-size: 4.5px;
+  line-height: 0.52;
+  letter-spacing: -0.5px;
+  font-family: 'Courier New', Courier, monospace;
+  white-space: pre;
+  overflow: hidden;
+  
+  padding: 2px;
+  margin: 0;
+  user-select: none;
+}
+
+#status {
+  margin-top: 15px;
+  font-size: 0.85rem;
+  color: #58a6ff;
+}
+
+.controls {
+  margin-top: 15px;
+  font-size: 0.75rem;
+  color: #8b949e;
+  text-align: center;
+  line-height: 1.5;
+}
+
+kbd {
+  background: #21262d;
+  border: 1px solid #30363d;
+  border-radius: 3px;
+  padding: 1px 5px;
+  color: #c9d1d9;
+}
+
+input[type="file"] {
+  color: #c9d1d9;
+  background: #21262d;
+  border: 1px solid #30363d;
+  padding: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
